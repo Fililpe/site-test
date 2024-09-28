@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c3c3c3c3;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  gap: 10px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.item:hover {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+  margin: 10px;
+
+  animation-name: test;
+  animation-duration: 4s;
+}
+
+@keyframes test {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
